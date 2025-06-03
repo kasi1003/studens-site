@@ -8,7 +8,7 @@ import { Head, Link, useForm } from "@inertiajs/react";
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
         student_num: "",
-
+        course: "",
         name: "",
         email: "",
         password: "",
@@ -74,7 +74,19 @@ export default function Register() {
                     />
                     <InputError message={errors.student_num} className="mt-2" />
                 </div>
-
+                <div className="mt-4">
+                    <InputLabel htmlFor="course" value="Related Course" />
+                    <TextInput
+                        id="course"
+                        name="course"
+                        value={data.course}
+                        className="mt-1 block w-full"
+                        autoComplete="course"
+                        onChange={(e) => setData("course", e.target.value)}
+                        required
+                    />
+                    <InputError message={errors.course} className="mt-2" />
+                </div>
                 <div className="mt-4">
                     <InputLabel htmlFor="password" value="Password" />
 

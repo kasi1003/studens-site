@@ -32,6 +32,7 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'student_num' => 'required|integer|unique:students',
+            'course' => 'required|string|max:255', // <-- Add this line
 
             'name' => 'required|string|max:255',
             'email' => 'required|string|lowercase|email|max:255|unique:' . Students::class,
@@ -40,6 +41,7 @@ class RegisteredUserController extends Controller
 
         $user = Students::create([
             'student_num' => $request->student_num,
+            'course' => $request->course, // <-- Add this line
 
             'name' => $request->name,
             'email' => $request->email,
