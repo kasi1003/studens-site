@@ -18,6 +18,7 @@ class Students extends Authenticatable
         'password',
         'student_bio',
         'cv',
+        'faculty',
         'course',
         'nust_letter',
         'profile_picture',

@@ -4,17 +4,19 @@ import PrimaryButton from "@/Components/PrimaryButton";
 import TextInput from "@/Components/TextInput";
 import GuestLayout from "@/Layouts/GuestLayout";
 import { Head, Link, useForm } from "@inertiajs/react";
+import { useState } from "react";
 
-export default function Register() {
+export default function Register({ faculties = {} }) {
     const { data, setData, post, processing, errors, reset } = useForm({
         student_num: "",
         course: "",
+        faculty: "",
         name: "",
         email: "",
         password: "",
         password_confirmation: "",
     });
-
+    const [courses, setCourses] = useState([]);
     const submit = (e) => {
         e.preventDefault();
 
@@ -75,18 +77,51 @@ export default function Register() {
                     <InputError message={errors.student_num} className="mt-2" />
                 </div>
                 <div className="mt-4">
-                    <InputLabel htmlFor="course" value="Related Course" />
-                    <TextInput
-                        id="course"
-                        name="course"
-                        value={data.course}
-                        className="mt-1 block w-full"
-                        autoComplete="course"
-                        onChange={(e) => setData("course", e.target.value)}
+                    <InputLabel htmlFor="faculty" value="Faculty" />
+                    <select
+                        id="faculty"
+                        name="faculty"
+                        value={data.faculty}
+                        className="mt-1 block w-full rounded border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+                        onChange={(e) => {
+                            const selectedFaculty = e.target.value;
+                            setData("faculty", selectedFaculty);
+                            setCourses(faculties[selectedFaculty] || []);
+                            setData("course", ""); // reset course
+                        }}
                         required
-                    />
-                    <InputError message={errors.course} className="mt-2" />
+                    >
+                        <option value="">-- Select your faculty --</option>
+                        {Object.keys(faculties).map((faculty) => (
+                            <option key={faculty} value={faculty}>
+                                {faculty}
+                            </option>
+                        ))}
+                    </select>
+                    <InputError message={errors.faculty} className="mt-2" />
                 </div>
+
+                {data.faculty && (
+                    <div className="mt-4">
+                        <InputLabel htmlFor="course" value="Course" />
+                        <select
+                            id="course"
+                            name="course"
+                            value={data.course}
+                            className="mt-1 block w-full rounded border-gray-300 focus:border-indigo-500 focus:ring-indigo-500"
+                            onChange={(e) => setData("course", e.target.value)}
+                            required
+                        >
+                            <option value="">-- Select your course --</option>
+                            {courses.map((course) => (
+                                <option key={course} value={course}>
+                                    {course}
+                                </option>
+                            ))}
+                        </select>
+                        <InputError message={errors.course} className="mt-2" />
+                    </div>
+                )}
                 <div className="mt-4">
                     <InputLabel htmlFor="password" value="Password" />
 
