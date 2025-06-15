@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\Students;
+use App\Models\Student;
+use Illuminate\Validation\Rules\Password;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -31,17 +32,51 @@ class RegisteredUserController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
-            'student_num' => 'required|integer|unique:students',
-            'course' => 'required|string|max:255', // <-- Add this line
-
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|lowercase|email|max:255|unique:' . Students::class,
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'student_num' => [
+                'required',
+                'integer',
+                'unique:students',
+                'regex:/^\d{7,10}$/' // Student number regex
+            ],
+            'name' => [
+                'required',
+                'string',
+                'max:255',
+                'regex:/^(?:[A-Za-z\'-]{2,})(?:\s+[A-Za-z\'-]{2,}){0,6}$/'
+            ],
+            'email' => [
+                'required',
+                'string',
+                'email',
+                'max:255',
+                'unique:students',
+                'regex:/@(gmail\.com|nust\.na|outlook\.com)$/'
+            ],
+            'faculty' => 'required|string|max:255',
+            'course' => 'required|string|max:255',
+            'specialization' => 'required|string|max:255',
+            'password' => [
+                'required',
+                'confirmed',
+                Password::min(8)
+                    ->mixedCase()
+                    ->numbers()
+                    ->symbols()
+                    ->uncompromised(),
+            ],
+        ], [
+            'student_num.regex' => 'Student number must be 7-10 digits',
+            'name.regex' => 'Name must be 2-4 words with 2+ characters each',
+            'email.regex' => 'Email must be from @gmail.com, @nust.na or @outlook.com',
+            'password.min' => 'Password must contain uppercase, lowercase, number and special character',
         ]);
 
-        $user = Students::create([
+
+        $user = Student::create([
             'student_num' => $request->student_num,
-            'course' => $request->course, // <-- Add this line
+            'faculty' => $request->faculty,          // Add this
+            'course' => $request->course,            // Add this
+            'specialization' => $request->specialization,
 
             'name' => $request->name,
             'email' => $request->email,

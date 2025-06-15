@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AppliedInternships;
+use App\Models\AppliedInternship;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -15,7 +15,7 @@ class AppliedInternshipsController extends Controller
             'internship_id' => 'required|exists:internships,id',
         ]);
 
-        AppliedInternships::create([
+        AppliedInternship::create([
             'internship_id' => $request->internship_id,
             'student_id' => Auth::id(),
             'application_status' => 'submitted',
