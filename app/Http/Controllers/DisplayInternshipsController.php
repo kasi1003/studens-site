@@ -12,23 +12,51 @@ use Inertia\Inertia;
 
 class DisplayInternshipsController
 {
-    public function index()
-    {
-        $student = Auth::user();
+        public function index()
+{
+    $student = Auth::user()->load('course');
 
-        // Get internship IDs where this student has already submitted an application
-        $appliedIds = AppliedInternships::where('student_id', $student->id)
-            ->where('application_status', 'submitted')
-            ->pluck('internship_id')
-            ->toArray();
-
-        // Fetch internships for the student's course, excluding already applied ones
-        $internships = Internships::where('related_course', $student->course)
-            ->whereNotIn('id', $appliedIds)
-            ->get();
-
+    if (!$student->course) {
+        // Course not assigned, no internships
         return Inertia::render('Dashboard', [
-            'internships' => $internships,
+            'internships' => [],
+            'filters' => [
+                'location' => request('location'),
+                'name' => request('name'),
+            ],
         ]);
     }
+
+    $facultyName = $student->course->faculty;
+
+    $appliedIds = AppliedInternships::where('student_id', $student->id)
+        ->where('application_status', 'submitted')
+        ->pluck('internship_id')
+        ->toArray();
+
+    $location = request('location');
+    $name = request('name');
+
+    $query = Internships::query()
+        ->where('related_course', 'like', '%' . $facultyName . '%')
+        ->whereNotIn('id', $appliedIds);
+
+    if ($location) {
+        $query->where('work_location', 'like', '%' . $location . '%');
+    }
+
+    if ($name) {
+        $query->where('internship_name', 'like', '%' . $name . '%');
+    }
+
+    $internships = $query->get();
+
+    return Inertia::render('Dashboard', [
+        'internships' => $internships,
+        'filters' => [
+            'location' => $location,
+            'name' => $name,
+        ],
+    ]);
+}
 }

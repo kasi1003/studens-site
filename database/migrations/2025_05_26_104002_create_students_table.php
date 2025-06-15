@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('student_bio')->nullable();
             $table->rememberToken();
             $table->binary('cv')->nullable();; // LONGBLOB equivalent
-            $table->string('faculty', 255)->nullable();
-            $table->string('course', 255)->nullable();
+            $table->foreignId('course_id')->nullable()->constrained('courses')->onDelete('set null');
             $table->binary('nust_letter')->nullable(); // LONGBLOB equivalent
             $table->binary('profile_picture')->nullable();
             $table->timestamps();

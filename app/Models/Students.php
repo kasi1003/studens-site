@@ -4,11 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Students extends Authenticatable
 {
-    //
     protected $table = 'students';
 
     protected $fillable = [
@@ -18,8 +17,7 @@ class Students extends Authenticatable
         'password',
         'student_bio',
         'cv',
-        'faculty',
-        'course',
+        'course_id', 
         'nust_letter',
         'profile_picture',
     ];
@@ -35,4 +33,12 @@ class Students extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * A student belongs to a course.
+     */
+    public function course(): BelongsTo
+    {
+        return $this->belongsTo(Course::class, 'course_id');
+    }
 }

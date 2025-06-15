@@ -122,13 +122,12 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-     public function store(Request $request): RedirectResponse
+         public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'student_num' => 'required|digits:9|unique:students',
             'faculty' => 'required|string|max:255',
             'course' => 'required|string|max:255',
-
             'name' => 'required|string|max:255',
             'email' => [
                 'required',
@@ -144,13 +143,19 @@ class RegisteredUserController extends Controller
             'email.regex' => 'Email is not allowed.',
         ]);
 
+        // Find or create the course
+        $course = \App\Models\Course::firstOrCreate([
+            'faculty' => $request->faculty,
+            'name' => $request->course,
+        ]);
+
+        // Create the student with a foreign key to course
         $user = Students::create([
             'student_num' => $request->student_num,
-            'faculty' => $request->faculty,
-            'course' => $request->course,
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'course_id' => $course->id,
         ]);
 
         event(new Registered($user));
