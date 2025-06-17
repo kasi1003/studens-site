@@ -59,6 +59,12 @@ export default function DisplayInternships({ internships, filters = {} }) {
                                 <p className="text-sm text-gray-600 mb-1">
                                     <strong>Location:</strong> {internship.work_location}
                                 </p>
+                                <p className="text-sm text-gray-600 mb-1">
+                                    <strong>Contact Email:</strong> {internship.user?.email || "N/A"}
+                                </p>
+                                <p className="text-sm text-gray-600 mb-1">
+                                    <strong>Contact Number:</strong> {internship.user?.contact_number || "N/A"}
+                                </p>
                             </div>
                             <button
                                 className="mt-4 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"

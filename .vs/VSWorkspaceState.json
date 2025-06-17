@@ -11,8 +11,9 @@
     "\\resources",
     "\\resources\\js",
     "\\resources\\js\\Pages",
-    "\\resources\\js\\Pages\\Auth"
+    "\\resources\\js\\Pages\\Profile",
+    "\\resources\\js\\Pages\\Profile\\Partials"
   ],
-  "SelectedNode": "\\app\\Models\\Students.php",
+  "SelectedNode": "\\app\\Http\\Controllers\\Auth\\RegisteredUserController.php",
   "PreviewInSolutionExplorer": false
 }

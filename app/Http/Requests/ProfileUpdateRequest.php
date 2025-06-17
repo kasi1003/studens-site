@@ -20,10 +20,10 @@ class ProfileUpdateRequest extends FormRequest
             'email' => [
                 'required',
                 'string',
-                'lowercase',
                 'email',
                 'max:255',
-                Rule::unique(User::class)->ignore($this->user()->id),
+                'regex:/^[a-zA-Z0-9._%+-]+@(gmail\.com|outlook\.com|hotmail\.com|yahoo\.com|nust\.na)$/',
+                Rule::unique('students', 'email')->ignore($this->user()->id),
             ],
         ];
     }

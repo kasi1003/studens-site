@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('company_description')->nullable();
             $table->binary('company_image')->nullable();
-
+            $table->string('contact_number');
             $table->rememberToken();
             $table->timestamps();
         });

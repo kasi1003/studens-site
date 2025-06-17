@@ -7,16 +7,36 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\Auth\\RegisteredUserController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\StudentDashboardController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\StudentDashboardController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\app\\Models\\User.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Models\\User.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\js\\Pages\\Dashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\resources\\js\\Components\\DisplayInternships.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\js\\Components\\DisplayInternships.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Auth\\Register.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\js\\Pages\\Auth\\Register.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\DisplayInternshipsController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\DisplayInternshipsController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\app\\Http\\Requests\\ProfileUpdateRequest.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Requests\\ProfileUpdateRequest.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Profile\\Partials\\UpdateProfileInformationForm.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\js\\Pages\\Profile\\Partials\\UpdateProfileInformationForm.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\ProfileController.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Http\\Controllers\\ProfileController.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Profile\\Partials\\UpdatePasswordForm.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:resources\\js\\Pages\\Profile\\Partials\\UpdatePasswordForm.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\wamp64\\www\\internship-portal\\app\\Models\\Course.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\Models\\Course.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +46,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentDashboardController.php",
-              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\StudentDashboardController.php",
-              "RelativeDocumentMoniker": "app\\Http\\Controllers\\StudentDashboardController.php",
-              "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\StudentDashboardController.php",
-              "RelativeToolTip": "app\\Http\\Controllers\\StudentDashboardController.php",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DisplayInternshipsController.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\DisplayInternshipsController.php",
+              "RelativeDocumentMoniker": "app\\Http\\Controllers\\DisplayInternshipsController.php",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\DisplayInternshipsController.php",
+              "RelativeToolTip": "app\\Http\\Controllers\\DisplayInternshipsController.php",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-12T17:13:32.954Z",
+              "WhenOpened": "2025-06-16T21:47:31.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dashboard.jsx",
-              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Dashboard.jsx",
-              "RelativeDocumentMoniker": "resources\\js\\Pages\\Dashboard.jsx",
-              "ToolTip": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Dashboard.jsx",
-              "RelativeToolTip": "resources\\js\\Pages\\Dashboard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DisplayInternships.jsx",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Components\\DisplayInternships.jsx",
+              "RelativeDocumentMoniker": "resources\\js\\Components\\DisplayInternships.jsx",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Components\\DisplayInternships.jsx",
+              "RelativeToolTip": "resources\\js\\Components\\DisplayInternships.jsx",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwDwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-12T17:10:54.692Z",
+              "WhenOpened": "2025-06-16T21:33:56.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\app\\Models\\User.php",
+              "RelativeDocumentMoniker": "app\\Models\\User.php",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Models\\User.php",
+              "RelativeToolTip": "app\\Models\\User.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-16T21:27:13.676Z",
               "EditorCaption": ""
             },
             {
@@ -62,22 +95,74 @@
               "RelativeDocumentMoniker": "app\\Http\\Controllers\\Auth\\RegisteredUserController.php",
               "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\Auth\\RegisteredUserController.php",
               "RelativeToolTip": "app\\Http\\Controllers\\Auth\\RegisteredUserController.php",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-12T17:01:09.997Z",
+              "WhenOpened": "2025-06-16T21:09:48.115Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Register.jsx",
-              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Auth\\Register.jsx",
-              "RelativeDocumentMoniker": "resources\\js\\Pages\\Auth\\Register.jsx",
-              "ToolTip": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Auth\\Register.jsx",
-              "RelativeToolTip": "resources\\js\\Pages\\Auth\\Register.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UpdateProfileInformationForm.jsx",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Profile\\Partials\\UpdateProfileInformationForm.jsx",
+              "RelativeDocumentMoniker": "resources\\js\\Pages\\Profile\\Partials\\UpdateProfileInformationForm.jsx",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Profile\\Partials\\UpdateProfileInformationForm.jsx",
+              "RelativeToolTip": "resources\\js\\Pages\\Profile\\Partials\\UpdateProfileInformationForm.jsx",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAQwAQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-12T17:00:49.219Z",
+              "WhenOpened": "2025-06-16T21:04:46.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdatePasswordForm.jsx",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Profile\\Partials\\UpdatePasswordForm.jsx",
+              "RelativeDocumentMoniker": "resources\\js\\Pages\\Profile\\Partials\\UpdatePasswordForm.jsx",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\resources\\js\\Pages\\Profile\\Partials\\UpdatePasswordForm.jsx",
+              "RelativeToolTip": "resources\\js\\Pages\\Profile\\Partials\\UpdatePasswordForm.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-06-16T21:04:36.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfileController.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\ProfileController.php",
+              "RelativeDocumentMoniker": "app\\Http\\Controllers\\ProfileController.php",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Controllers\\ProfileController.php",
+              "RelativeToolTip": "app\\Http\\Controllers\\ProfileController.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-16T21:03:13.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Course.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\app\\Models\\Course.php",
+              "RelativeDocumentMoniker": "app\\Models\\Course.php",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Models\\Course.php",
+              "RelativeToolTip": "app\\Models\\Course.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-15T12:49:31.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfileUpdateRequest.php",
+              "DocumentMoniker": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Requests\\ProfileUpdateRequest.php",
+              "RelativeDocumentMoniker": "app\\Http\\Requests\\ProfileUpdateRequest.php",
+              "ToolTip": "C:\\wamp64\\www\\internship-portal\\app\\Http\\Requests\\ProfileUpdateRequest.php",
+              "RelativeToolTip": "app\\Http\\Requests\\ProfileUpdateRequest.php",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-12T18:27:32.019Z",
               "EditorCaption": ""
             }
           ]

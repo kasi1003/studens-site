@@ -138,6 +138,15 @@ class RegisteredUserController extends Controller
                 'unique:' . Students::class,
                 'regex:/^[a-zA-Z0-9._%+-]+@(gmail\.com|outlook\.com|hotmail\.com|yahoo\.com|nust\.na)$/',
             ],
+            'student_email' => [
+                'required',
+                'string',
+                'lowercase',
+                'email',
+                'max:255',
+                'unique:' . Students::class,
+                'regex:/^[a-zA-Z0-9._%+-]+@(gmail\.com|outlook\.com|hotmail\.com|yahoo\.com|nust\.na)$/',
+            ],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ], [
             'email.regex' => 'Email is not allowed.',
@@ -154,6 +163,7 @@ class RegisteredUserController extends Controller
             'student_num' => $request->student_num,
             'name' => $request->name,
             'email' => $request->email,
+            'student_email' => $request->student_email,
             'password' => Hash::make($request->password),
             'course_id' => $course->id,
         ]);

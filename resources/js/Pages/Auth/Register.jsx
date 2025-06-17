@@ -63,6 +63,23 @@ export default function Register({ faculties = {} }) {
 
                     <InputError message={errors.email} className="mt-2" />
                 </div>
+
+                <div className="mt-4">
+                    <InputLabel htmlFor="student_email" value="Student Email" />
+
+                    <TextInput
+                        id="student_email"
+                        type="email"
+                        name="student_email"
+                        value={data.student_email}
+                        className="mt-1 block w-full"
+                        autoComplete="username"
+                        onChange={(e) => setData("student_email", e.target.value)}
+                        required
+                    />
+
+                    <InputError message={errors.email} className="mt-2" />
+                </div>
                 <div>
                     <InputLabel htmlFor="student_num" value="Student Number" />
                     <TextInput
