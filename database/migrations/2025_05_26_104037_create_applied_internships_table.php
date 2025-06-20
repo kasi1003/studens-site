@@ -9,24 +9,28 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+        public function up(): void
     {
         Schema::create('applied_internships', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger(column: 'internship_id');
+            $table->unsignedBigInteger('internship_id');
+            $table->unsignedBigInteger('student_id');
 
-            $table->foreign('internship_id')->references('id')->on('internships')->onDelete('cascade'); // Add this line
-            $table->unsignedBigInteger(column: 'student_id');
-            // Add foreign key constraints
-            $table->foreign('student_id')
-                ->references('id')
-                ->on('students')
-                ->onDelete('cascade'); // Delete applied internship if student is deleted
             $table->enum('application_status', ['accepted', 'rejected', 'submitted'])
-                ->nullable()
-                ->default(null);
+                  ->nullable()
+                  ->default(null);
+
             $table->timestamps();
+
+            $table->foreign('internship_id')->references('id')->on('internships')->onDelete('cascade');
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
         });
+
+        // Add longblob columns manually after table is created
+        DB::statement("ALTER TABLE applied_internships ADD cv LONGBLOB NULL");
+        DB::statement("ALTER TABLE applied_internships ADD cover_letter LONGBLOB NULL");
+        DB::statement("ALTER TABLE applied_internships ADD academic_results LONGBLOB NULL");
+        DB::statement("ALTER TABLE applied_internships ADD wil_letter LONGBLOB NULL");
     }
 
     /**

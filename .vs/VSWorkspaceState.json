@@ -1,19 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app",
-    "\\app\\Http",
-    "\\app\\Http\\Controllers",
-    "\\app\\Http\\Controllers\\Auth",
-    "\\app\\Models",
-    "\\database",
-    "\\database\\migrations",
     "\\resources",
     "\\resources\\js",
+    "\\resources\\js\\Components",
     "\\resources\\js\\Pages",
     "\\resources\\js\\Pages\\Profile",
-    "\\resources\\js\\Pages\\Profile\\Partials"
+    "\\resources\\js\\Pages\\Profile\\Partials",
+    "\\resources\\views",
+    "\\resources\\views\\applications",
+    "\\resources\\views\\auth",
+    "\\resources\\views\\student"
   ],
-  "SelectedNode": "\\app\\Http\\Controllers\\Auth\\RegisteredUserController.php",
+  "SelectedNode": "\\resources\\views\\student\\dashboard.blade.php",
   "PreviewInSolutionExplorer": false
 }

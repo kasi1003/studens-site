@@ -13,6 +13,11 @@ class AppliedInternships extends Model
         'internship_id',
         'student_id',
         'application_status',
+        'cv',
+        'cover_letter',
+        'academic_results',
+        'wil_letter',
+
     ];
 
     /**
